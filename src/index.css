@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Theme 1: Light + Sans */
+.theme1 {
+  @apply bg-white text-black font-sans;
+}
+
+/* Theme 2: Dark + Serif */
+.theme2 {
+  @apply bg-gray-900 text-white font-serif font-bold;
+}
+
+/* Theme 3: Colorful + Pacifico + Card grid */
+.theme3 {
+  @apply bg-gradient-to-r from-pink-200 to-blue-200 text-purple-900 font-pacifico;
+}
+
+body {
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Scroll fix due to fixed header */
+main {
+  margin-top: 4rem;
+}
